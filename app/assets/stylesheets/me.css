@@ -1,7 +1,7 @@
 * {
 	background: #e7e8d1;
 	font-family: sans-serif;
-	border-width:1px;
+	border-width:0px;
 }
 
 
@@ -63,6 +63,7 @@ body {
 	height:25px;
 }
 .objective {
+	position: relative;
 	text-align: center;
 	margin:20px 0 0 0;
 	float:left;
@@ -108,6 +109,9 @@ body {
 .tree {
 	margin-left: 50px;
 }
+
+
+
 
 .heading_block {
 	position:relative;
@@ -210,21 +214,55 @@ body {
 }
 
 .four_block {
-	line-height: 80%;
+	overflow: scroll;
 	position:relative;
-	float:left;
-	width:598px;
+	margin:0;
+	padding: 0;
+	width:898px;
 	height:70px;
 	border-style:solid;  /*remove this to view without border   */
 	/*border-width:1px;*/
 	border-color:black;
+	
+}
+
+.tags {
+
+	margin-top:5px;
+	width:80px;
+	height:40px;
+	background:white;
+	border-radius: 5px;
 	text-align: center;
+	float:left;
+}
+.tags p{
+	/*position:absolute;*/
+	top:0;
+	background:rgba(0,0,0,0);
+
 }
 .notice_action {
+	position:absolute;
+	left:200px;
+	bottom: 20px;
+	font-size: 16px;
+	text-align: center;
+	color:grey;
+	font-style:italic;
+}
+.tags_text {
+	
+	font-size: 16px;
+	text-align: center;
 	color:grey;
 	font-style:italic;
 }
 .funny {
+	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 200px;
 	color:grey;
 	font-style: italic;
 }
@@ -268,11 +306,11 @@ body {
 	text-align: center;
 }
 
-.left_node#study{
+#study{
 	position:inherit;
 	width:100px;
 	height:40px;
-	margin:5px auto 5px 5px;
+	
 	background:#00a388;   /* #ffb03b   */
 	border-radius:5px;
 	text-align: center;
@@ -304,13 +342,53 @@ body {
 	text-align: center;
 }
 
-.right_node#self {
+#company {
 	float:left;
-	clear:left;
 	position:inherit;
 	width:135px;
 	height:40px;
-	margin:5px auto 5px 110px;
+	background:#e74c3c;
+	border-radius:5px;
+	text-align: center;
+}
+
+#project {
+	float:left;
+	
+	position:inherit;
+	width:90px;
+	height:40px;
+	background:#91aa9d;
+	border-radius:5px;
+	text-align: center;
+}
+
+#link {
+	float:left;
+	position:inherit;
+	width:90px;
+	height:40px;
+	background:#cccc9f;
+	border-radius:5px;
+	text-align: center;
+}
+#code {
+	float:left;
+	position:inherit;
+	width:90px;
+	height:40px;
+	background:#ff8698;
+	border-radius:5px;
+	text-align: center;
+
+
+
+}
+#self {
+	float:left;
+	position: inherit;
+	width:135px;
+	height:40px;
 	background:#a864a8;
 	border-radius:5px;
 	text-align: center;
@@ -319,13 +397,11 @@ body {
 
 
 
-.right_node#school {
+#school {
+	position: inherit;
 	float:left;
-	clear:left;
-	position:inherit;
 	width:135px;
 	height:40px;
-	margin:5px auto 5px 110px;
 	background:#ffb03b;
 	border-radius:5px;
 	text-align: center;
@@ -447,20 +523,24 @@ body {
 	text-align: center;
 }
 
-.node_child_left#volunteer {
-	position:absolute;
-	left:0;
+#volunteer {
+	float: left;
+	position:inherit;
 	width:90px;
 	height:40px;
-	margin:5px auto 5px 5px;
 	background:#bedb39;
 	border-radius:5px;
 	text-align: center;
 }
 
-.node_child_left#volunteer:hover {
-	cursor:pointer;
-	opacity:0.7;
+#work {
+	left:0;
+	width:100px;
+	height:40px;
+	margin:5px auto 5px 5px;
+	background:#3498db;
+	border-radius:5px;
+	text-align: center;
 }
 
 .node_child_left:hover {
