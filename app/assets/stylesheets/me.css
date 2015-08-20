@@ -1,6 +1,7 @@
 * {
 	background: #e7e8d1;
 	font-family: sans-serif;
+	border-width:1px;
 }
 
 
@@ -114,7 +115,7 @@ body {
 	width:148px;
 	height:70px;
 	border-style:solid;  /*remove this to view without border   */
-	border-width:1px;
+	/*border-width:1px;*/
 	border-color:black;
 }
 
@@ -124,7 +125,7 @@ body {
 	width:148px;
 	height:70px;
 	border-style:solid; /*remove this to view without border   */
-	border-width:1px;
+	/*border-width:1px;*/
 	border-color:black;
 }
 
@@ -168,6 +169,16 @@ body {
 	background:white;
 }
 
+.vertical_root_bottom {
+	right:0;
+	top:0;
+	position:absolute;
+	margin-right: 22px;
+	width:6px;
+	height:35px;
+	background:white;
+}
+
 .dot_root {
 	position:absolute;
 	top:20px;
@@ -189,8 +200,34 @@ body {
 	margin-top:33px;
 }
 
+.horizon_root_bottom {
+	width:25px;
+	height:6px;
+	position: absolute;
+	right:0;
+	background:white;
+	margin-top:33px;
+}
 
-
+.four_block {
+	line-height: 80%;
+	position:relative;
+	float:left;
+	width:598px;
+	height:70px;
+	border-style:solid;  /*remove this to view without border   */
+	/*border-width:1px;*/
+	border-color:black;
+	text-align: center;
+}
+.notice_action {
+	color:grey;
+	font-style:italic;
+}
+.funny {
+	color:grey;
+	font-style: italic;
+}
 
 .big_block {
 	position:relative;
@@ -198,7 +235,7 @@ body {
 	width:298px;
 	height:70px;
 	border-style:solid;  /*remove this to view without border   */
-	border-width:1px;
+	/*border-width:1px;*/
 	border-color:black;
 }
 
@@ -231,6 +268,16 @@ body {
 	text-align: center;
 }
 
+.left_node#study{
+	position:inherit;
+	width:100px;
+	height:40px;
+	margin:5px auto 5px 5px;
+	background:#00a388;   /* #ffb03b   */
+	border-radius:5px;
+	text-align: center;
+}
+
 .left_node:hover {
 	cursor: pointer;
 	opacity: 0.8;
@@ -257,6 +304,33 @@ body {
 	text-align: center;
 }
 
+.right_node#self {
+	float:left;
+	clear:left;
+	position:inherit;
+	width:135px;
+	height:40px;
+	margin:5px auto 5px 110px;
+	background:#a864a8;
+	border-radius:5px;
+	text-align: center;
+}
+
+
+
+
+.right_node#school {
+	float:left;
+	clear:left;
+	position:inherit;
+	width:135px;
+	height:40px;
+	margin:5px auto 5px 110px;
+	background:#ffb03b;
+	border-radius:5px;
+	text-align: center;
+}
+
 .right_node p{
 	background: rgba(0,0,0,0);
 	font-size: 16px;
@@ -267,6 +341,15 @@ body {
 
 .horizon_branch {
 	width:148px;
+	height:6px;
+	position: absolute;
+	right:0;
+	background:white;
+	margin-top:33px;
+}
+
+.horizon_branch#mid {
+	width:130px;
 	height:6px;
 	position: absolute;
 	right:0;
@@ -310,11 +393,23 @@ body {
 .vertical_child {
 	left:0;
 	position:absolute;
+	margin-left: 20px;
+	width:6px;
+	height:70px;
+	background:white;
+}
+
+.vertical_child#mid {
+	left:0;
+	position:absolute;
 	margin-left: 22px;
 	width:6px;
 	height:70px;
 	background:white;
 }
+
+
+
 .vertical_child_top {
 	bottom:0;
 	position:absolute;
@@ -352,6 +447,27 @@ body {
 	text-align: center;
 }
 
+.node_child_left#volunteer {
+	position:absolute;
+	left:0;
+	width:90px;
+	height:40px;
+	margin:5px auto 5px 5px;
+	background:#bedb39;
+	border-radius:5px;
+	text-align: center;
+}
+
+.node_child_left#volunteer:hover {
+	cursor:pointer;
+	opacity:0.7;
+}
+
+.node_child_left:hover {
+	cursor:pointer;
+	opacity:0.7;
+}
+
 .node_child_left p{
 	background:rgba(0,0,0,0);
 	font-size: 16px;
@@ -367,6 +483,10 @@ body {
 	border-radius:5px;
 	text-align: center;
 }
+.node_child_mid:hover{
+	cursor:pointer;
+	opacity:0.7;
+}
 .node_child_mid p{
 	background:rgba(0,0,0,0);
 	font-size: 16px;
@@ -380,6 +500,10 @@ body {
 	background:#ff8698;
 	border-radius:5px;
 	text-align: center;
+}
+.node_child_right:hover{
+	cursor:pointer;
+	opacity:0.7;
 }
 .node_child_right p{
 	background:rgba(0,0,0,0);
