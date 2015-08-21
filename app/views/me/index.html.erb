@@ -3,7 +3,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jqueryui.min.js"></script>
 
 <script>
-
+$(function(){
+	$('.left_node').click(function(){
+		var text = "HELLO BOX"
+		text.dialog("open"
+			
+		);
+	});
+});
 </script>
 
 
@@ -16,8 +23,8 @@
 		<p class = "name"> THO TRUONG </p>
 		<p class = "sub_info"> Phone: (408) 427 2150</p>
 		<p class = "sub_info"> Email: thotruong@berkeley.edu</p>
-		<p class = "sub_info"> LinkedIn: <%= image_tag 'github.png', :class => 'logo_icon' %></p>
-		<p class = "sub_info"> GitHub: <%= image_tag 'linked.png', :class => 'logo_icon' %></p>
+		<p class = "sub_info"> LinkedIn: <%= image_tag 'linked.png', :class => 'logo_icon' %></p>
+		<p class = "sub_info"> GitHub: <%= image_tag 'github.png', :class => 'logo_icon' %></p>
 
 
 	</div>
@@ -27,7 +34,21 @@
 	<p class = "notice_action">Actions: Hover & Click
 	<p class = "funny">If you don't see anything, it means that I have not updated it yet :)
 </div>
-<div class = "summary">Summary</div>
+
+<div class = "divider"></div>
+
+
+
+<div class = "summary">
+	<p>Summary</p>
+	<div class = "inbox">
+		<p>Education:</p>	
+		<p>Skills:</p>
+		<p>Experience:</p>
+		<p>Projects:</p>
+	
+	</div>
+</div>
 <div class = "panel_outer">
 	<div class = "panel">
 
@@ -446,7 +467,7 @@
 			</div>
 		</div>
 <!--  -->
-<div class = "body_block"></div>
+		<div class = "body_block"></div>
 		<div class = "body_block">
 			<div class = "vertical_root" id="1"></div>
 		</div>
@@ -605,14 +626,16 @@
 		<div class = "body_block"></div>
 		<div class = "body_block"></div>
 		<div class = "body_block"></div>
-		<div class = "body_block"></div>
-
+		<!-- <div class = "footer"><p>COPYRIGHT © 2015 THO TRUONG </p></div> -->
+		
+		
 		
 	</div>
 </div>
 
+<div class = "footer"><p>COPYRIGHT © 2015 THO TRUONG </p></div>
 </body>
-		
+
 
 
 

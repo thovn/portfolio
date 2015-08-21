@@ -4,27 +4,58 @@
 	border-width:0px;
 }
 
+.sum_panel {
+	position:relative;
+	width:100%;
+	height:auto;
+	border-style: solid;
+	/*border-color: black;
+	border-width: 2px;
+	background:black;
+	opacity: 0.3;*/
 
-body {
-	/*display: inline-block;*/
+
+}
+
+.footer {
+	overflow: scroll;
+	width:120%;
+	height:100px;
+	margin:0;
+	padding:0;
+	background: #193441;
+	/*position:absolute;*/
+	/*clear:left;*/
+	/*float:left;*/
+	left:0px;
+	bottom:0px;
+	text-align: center
+}
+.footer p {
+	font-weight:lighter ;
+	color:grey;
+	background:rgba(0,0,0,0);
+	margin-top:40px;
+	margin-left: 20px;
 }
 
 .avatar_info {
 	float:left;
 	left:0;
-	height: 220px;
-	width:450px;
+	height: 170px;
+	width:350px;
 	margin: 20px 20px 20px 20px;
 	border-style:solid;
 	border-radius: 5px;
+	/*border-width: 4px;*/
 	border-color:white;
 }
 
 .avatar {
-	
+	margin-top:20px;
 	float:left;
-	height:200px;
-	width:200px;
+	height:100px;
+	width:100px;
 	border-style:solid;
 	border-width: 5px;
 	border-color: white;
@@ -33,10 +64,10 @@ body {
 
 .info {
 	float:left;
-	padding-top: 20px;
+	
 	/*line-height: 80%;*/
 	font-size: 14px;
-	margin-left: 20px;
+	margin-left: 10px;
 
 }
 
@@ -63,30 +94,80 @@ body {
 	height:25px;
 }
 .objective {
+	background-image: url("background2.jpg");
+
 	position: relative;
 	text-align: center;
 	margin:20px 0 0 0;
 	float:left;
-	height: 220px;
+	height: 170px;
 	font-size: 20px;
 	font-style: bold;
 	border-style:solid;
 	border-radius: 5px;
 	border-color:white;
 	width: 900px;
+	/*border-width: 4px;*/
 }
+.objective h1, p{
+	
+	background:rgba(0,0,0,0);
+}
+
+.divider {
+	overflow: scroll;
+	width:120%;
+	height:50px;
+	margin:0;
+	padding:0;
+	background: #193441;
+	/*position:absolute;*/
+	/*clear:left;*/
+	/*float:left;*/
+	left:0px;
+	bottom:0px;
+
+}
+
+
 
 .summary {
 	
 	clear:left;
 	float: left;
-	width: 450px;
+	width: 350px;
 	margin:0 0 0 20px;
+	height:1800px;
 	text-align: center;
 	border-style:solid;
 	border-radius: 5px;
 	border-color:white;
 	min-height: 500px;
+	/*border-width: 4px;*/
+}
+
+.summary p{
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+.inbox {
+	width:90%;
+	height:90%;
+	background:#e0e2b7;   /*#e74c3c*/
+	margin: 20px auto auto auto;
+	text-align: left;
+	
+}
+
+.inbox p {
+	background:rgba(0,0,0,0);
+	font-size: 12px;
+	text-transform: none;
+	font-weight: normal;
+	margin-left: 5px;
+	font-style: italic;
 }
 
 .panel_outer {
@@ -97,6 +178,7 @@ body {
 	border-style:solid;
 	border-radius: 5px;
 	border-color:white;
+	/*border-width: 4px;*/
 
 }
 .panel {
