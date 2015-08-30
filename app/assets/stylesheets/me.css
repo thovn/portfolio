@@ -770,7 +770,7 @@ a:hover{
 	min-width:600px !important;
 	min-height: 100px  !important;
 	background-size: cover !important;
-	background-image: url('customer_service') !important;
+	background-image: url('customer_service.jpg') !important;
 	/*background:rgba(0,0,0,0.5) !important;*/
 }
 
@@ -779,5 +779,5 @@ a:hover{
 	max-width:800px !important;
 	min-height: 120px  !important;
 	background-size: cover	 !important;
-	background-image: url('htv') !important;
+	background-image: url('htv.jpg') !important;
 }
