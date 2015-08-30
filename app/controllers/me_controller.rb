@@ -1,5 +1,6 @@
 class MeController < ApplicationController
   def index
+    gon.text = "HELLO"
   end
 
   def show

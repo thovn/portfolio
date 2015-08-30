@@ -1,26 +1,42 @@
 * {
-	background: #e7e8d1;
+	/**/
+	color:black;
 	font-family: sans-serif;
 	border-width:0px;
-}
-
-.sum_panel {
-	position:relative;
-	width:100%;
-	height:auto;
-	border-style: solid;
-	/*border-color: black;
-	border-width: 2px;
-	background:black;
-	opacity: 0.3;*/
-
+	margin:0;
+	padding:0;
 
 }
 
+table th, td{
+	font-size: 12px;
+	padding:5px 5px 5px 5px;
+
+}
+
+table td {
+	font-style: italic;
+}
+
+body {
+
+	margin:0;
+	padding:0;
+	background: #e7e8d1;
+}
+a:hover{
+	cursor: crosshair;
+}
+
+.body {
+	min-width: 1650px;
+	width: auto;
+}
 .footer {
 	overflow: scroll;
-	width:120%;
+	width:100%;
 	height:100px;
+
 	margin:0;
 	padding:0;
 	background: #193441;
@@ -29,17 +45,18 @@
 	/*float:left;*/
 	left:0px;
 	bottom:0px;
-	text-align: center
+	/*text-align: center*/
 }
 .footer p {
 	font-weight:lighter ;
 	color:grey;
 	background:rgba(0,0,0,0);
-	margin-top:40px;
-	margin-left: 20px;
+	margin:40px 0 0 40px;
+
 }
 
 .avatar_info {
+	background:#e74c3c;
 	float:left;
 	left:0;
 	height: 170px;
@@ -52,7 +69,7 @@
 }
 
 .avatar {
-	margin-top:20px;
+	margin:20px 0 0 10px;
 	float:left;
 	height:100px;
 	width:100px;
@@ -67,7 +84,7 @@
 	
 	/*line-height: 80%;*/
 	font-size: 14px;
-	margin-left: 10px;
+	margin: 20px 0px 0 10px;
 
 }
 
@@ -84,8 +101,9 @@
 	margin: 0 0 0 10px;
 }
 .name {
-	font-size: 20px;
-	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 16px;
+	font-weight:bold ;
 }
 .sub_info {
 	margin:0;
@@ -94,8 +112,10 @@
 	height:25px;
 }
 .objective {
-	background-image: url("background2.jpg");
-
+	background:rgba(0,0,0,0.5);
+	background-image: url("software_engineer.jpg") !important;
+	background-size: 900px 170px !important;
+	font-weight: bold;
 	position: relative;
 	text-align: center;
 	margin:20px 0 0 0;
@@ -107,16 +127,20 @@
 	border-radius: 5px;
 	border-color:white;
 	width: 900px;
+	background:#91aa9d;
 	/*border-width: 4px;*/
 }
-.objective h1, p{
-	
+.objective p{
+	color:black;
+	margin-top: 30px;
 	background:rgba(0,0,0,0);
 }
 
 .divider {
+
 	overflow: scroll;
-	width:120%;
+	clear:both;
+	width:100%;
 	height:50px;
 	margin:0;
 	padding:0;
@@ -130,10 +154,26 @@
 }
 
 
+.summary_table {
+	border-style:solid;
+	border-collapse: collapse;
+	border-width: 0 0 1px 0;
+}
+
+.summary_table th{
+	text-align: center;
+	width: 70px;
+}
+
+.summary_table p {
+
+	padding-top: 2px !important;
+	margin-top: 2px !important;
+}
 
 .summary {
 	
-	clear:left;
+	clear:both;
 	float: left;
 	width: 350px;
 	margin:0 0 0 20px;
@@ -154,8 +194,9 @@
 }
 .inbox {
 	width:90%;
-	height:90%;
-	background:#e0e2b7;   /*#e74c3c*/
+	height:94%;
+	background: #9ecddc; /*#91aa9d;*/
+	border-radius: 5px;
 	margin: 20px auto auto auto;
 	text-align: left;
 	
@@ -325,25 +366,28 @@
 
 }
 .notice_action {
+		font-weight: lighter;
 	position:absolute;
 	left:200px;
 	bottom: 20px;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	color:grey;
 	font-style:italic;
 }
 .tags_text {
 	
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	color:grey;
 	font-style:italic;
 }
 .funny {
-	font-size: 16px;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 14px;
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	left: 200px;
 	color:grey;
 	font-style: italic;
@@ -369,6 +413,7 @@
 
 }
 .big_node_background {
+	cursor: pointer;
 	position:absolute;
 	width:250px;
 	height:50px;
@@ -376,43 +421,42 @@
 	border-radius: 10px;
 	margin-top: 10px;
 	right:0;
+	
 }
 
-.left_node {
+[class^="button_main_left"]{
 	position:inherit;
 	width:100px;
 	height:40px;
 	margin:5px auto 5px 5px;
-	background:#3498db;
-	border-radius:5px;
-	text-align: center;
-}
-
-#study{
-	position:inherit;
-	width:100px;
-	height:40px;
 	
-	background:#00a388;   /* #ffb03b   */
 	border-radius:5px;
 	text-align: center;
 }
 
-.left_node:hover {
-	cursor: pointer;
+.button_main_left_work {
+	background:#3498db;
+}
+
+.button_main_left_study {		
+	background:#00a388;   
+}
+
+
+[class^="button"]:hover{
+	cursor: pointer !important;
 	opacity: 0.8;
 }
-.left_node p{
+[class^="button"] p{
 	background: rgba(0,0,0,0);
 	font-size: 16px;
 	margin-top: 12px;
+
 }
 
-.right_node:hover {
-	cursor: pointer;
-	opacity: 0.8;
-}
-.right_node {
+
+[class^="button_main_right"] {
+
 	float:left;
 	clear:left;
 	position:inherit;
@@ -422,6 +466,14 @@
 	background:#e74c3c;
 	border-radius:5px;
 	text-align: center;
+}
+
+.button_main_right_school {
+	background:#ffb03b;
+}
+
+.button_main_right_self {
+	background:#a864a8;
 }
 
 #company {
@@ -489,11 +541,11 @@
 	text-align: center;
 }
 
-.right_node p{
+/*.right_node p{
 	background: rgba(0,0,0,0);
 	font-size: 16px;
 	margin-top: 12px;
-}
+}*/
 
 
 
@@ -600,7 +652,7 @@
 	width:90px;
 	height:40px;
 	margin:5px auto 5px 5px;
-	background:#91aa9d;
+	background:#9ecddc;
 	border-radius:5px;
 	text-align: center;
 }
@@ -615,7 +667,7 @@
 	text-align: center;
 }
 
-#work {
+.button_main_left_work {
 	left:0;
 	width:100px;
 	height:40px;
@@ -674,6 +726,58 @@
 }
 
 
+.ui-dialog {
 
+	/*background: #d1dbbd !important;*/
+	padding:0 !important;
+	margin:0 !important;
+	/*background-image: url('dialog_background.jpg') !important;*/
+	/*background-repeat: repeat !important;*/
+	/*background-size:420px 420px !important;*/
+	/*border-color:white !important;*/
+	/*border-width:5px !important;*/
+	/*border-radius: 10px !important;*/
+	/*box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3) inset;*/
+	/*display: inline-block;*/
+	
 
+}
 
+.ui-dialog-titlebar{
+	display:none !important;
+}
+.ui-widget {
+   /* font-weight: lighter;*/
+    font-size: 14px !important;
+    padding: 5px 0px 5px 5px !important;
+}
+
+.information_fill {
+	display: none;
+}
+
+.tree{
+	position:absolute;
+	left:385px;
+	top:131px;
+	background-image: url('green_tree.png');
+	background-size:150px 150px;
+	width:150px;
+	height:150px;
+}
+.info_main_left_work1 {
+
+	min-width:600px !important;
+	min-height: 100px  !important;
+	background-size: cover !important;
+	background-image: url('customer_service') !important;
+	/*background:rgba(0,0,0,0.5) !important;*/
+}
+
+.info_main_right_company1 {
+	min-width:600px !important;
+	max-width:800px !important;
+	min-height: 120px  !important;
+	background-size: cover	 !important;
+	background-image: url('htv') !important;
+}

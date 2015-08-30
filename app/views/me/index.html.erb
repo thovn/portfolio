@@ -1,40 +1,35 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/w.1.0/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jqueryui.css"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jqueryui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-<script>
-$(function(){
-	$('.left_node').click(function(){
-		var text = "HELLO BOX"
-		text.dialog("open"
-			
-		);
-	});
-});
-</script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 
-<body>
+<!-- <script src="//code.jquery.com/jquery-2.1.4.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/jquery-ui.css" rel="stylesheet"> -->
 
+
+<body class = "body">
+<div class = "avatar_info_objective">
 <div class = "avatar_info">
 	<img class = 'avatar' src = "avata.jpg" />
 	
 	<div class = "info">
 		<p class = "name"> THO TRUONG </p>
-		<p class = "sub_info"> Phone: (408) 427 2150</p>
+		<p class = "sub_info"> Phone: (408) 427-2150</p>
 		<p class = "sub_info"> Email: thotruong@berkeley.edu</p>
-		<p class = "sub_info"> LinkedIn: <%= image_tag 'linked.png', :class => 'logo_icon' %></p>
-		<p class = "sub_info"> GitHub: <%= image_tag 'github.png', :class => 'logo_icon' %></p>
+		<p class = "sub_info"> LinkedIn: <%= link_to (image_tag 'linked.png', :class => 'logo_icon'),'https://www.linkedin.com/pub/tho-truong/94/278/7', :target => '_blank' %></p>
+		<p class = "sub_info"> GitHub: <%= link_to (image_tag 'github.png', :class => 'logo_icon'), 'https://github.com/thovn', :target => '_blank' %></p>
 
 
 	</div>
 </div>
 <div class = "objective">
-	<h1>SOFTWARE ENGINEER</h1>
-	<p class = "notice_action">Actions: Hover & Click
-	<p class = "funny">If you don't see anything, it means that I have not updated it yet :)
+	<p>SOFTWARE ENGINEER</p>
+	<!-- <p class = "notice_action">Actions: Hover & Click</p> -->
+	
 </div>
-
+</div>
 <div class = "divider"></div>
 
 
@@ -42,10 +37,62 @@ $(function(){
 <div class = "summary">
 	<p>Summary</p>
 	<div class = "inbox">
-		<p>Education:</p>	
-		<p>Skills:</p>
-		<p>Experience:</p>
-		<p>Projects:</p>
+		<table class = "summary_table">
+			<tr>
+				<th>Education:</th>
+				<td>B.S Degree in Electrical Engineer & Computer Science at U.C Berkeley</td>
+			</tr>
+		</table>
+		<table class = "summary_table">
+			<tr>
+				<th>Honors & Awards:</th>
+				<td>
+					<p>- U.C Berkeley Scholarship for undergraduate students.
+					<p>- 2nd Place in 4th Annual MCCP Math Challenge - Regional Competition.
+					<p>- 1st Place in 4th Annual MCCP Math Challenge - Individual Competition.
+				</td>
+			</tr>
+		</table>
+		<table class = "summary_table">
+			<tr>
+				<th>Skills:</th>
+				<td>Java, Python, C, Data Structure, Algorithms, Machine Learning, Ruby on Rails, HTML, CSS, SQL, MySQL, JavaScript, JQuery, AJAX, JSON, Desgin, 3D Modeling, Photoshop, CorelDraw, 3DS Max, Vray</td>
+			</tr>
+		</table>
+		<table class = "summary_table">
+			<tr>
+				<th>Experience:</th>
+				<td>
+					<p>- Customer Service: HTV  
+					<p>- Architecture Visualization: Worked at 3 companies.
+					<p>- Research & Developer & Teaching: MMC.
+					<p>- Web Developer: Armado Fox (Software Engineering professor at UC Berkeley)
+				</td>
+			</tr>
+		</table>
+		<table class = "summary_table">
+			<tr>
+				<th>Projects:</th>
+				<td>
+					<p>- Portfolio.
+					<p>- FlickrAPI.
+					<p>- Pacman with AI & Learning.
+					<p>- Redeemify.
+					<p>- OCR(Optical Character Regconition).
+					<p>- Processor Design.
+					<p>- LIFC Compiler.
+					<p>- Network Game.
+					<p>- Image Blurring and Edge Detection.
+					<p>- Electroencephalogram (EEG).
+					<p>- Efficient graph.
+					<p>- Hog Game.
+					<p>- Scheme Intepreter.
+					<p>- Ants vs Bees.
+				</td>
+			</tr>
+		</table>
+		
+		
 	
 	</div>
 </div>
@@ -56,10 +103,11 @@ $(function(){
 			<div class = "root"></div>
 		</div>
 		<div class = "heading_block">
-			<div class = "tags_text"><p>Tags :</p></div>
+
+			<!-- <div class = "tags_text"><p>Tags :</p></div> -->
 		</div>
 		<div class = "four_block">
-			
+			<p class = "funny">If you don't see anything, it means that I have not updated it yet :)</p>
 			<!-- <div class = "tags" id="work"><p>Work</p></div>
 			<div class = "tags" id="company"><p>Company</p></div>
 			<div class = "tags" id="project"><p>Project</p></div>
@@ -99,8 +147,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="work"><p>Work</p></div>
-				<div class = "right_node" id="company"><p>HTV</p></div>
+				<div class = "button_main_left_work" id="work1"><p>Work</p></div>
+				<a href = "http://www.htv.com.vn/" target = "_blank"><div class = "button_main_right_company" id="company1"><p>HTV</p></div></a>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -145,8 +193,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="work"><p>Work</p></div>
-				<div class = "right_node" id="company"><p>Arch Vis</p></div>
+				<div class = "button_main_left_work" id="work2"><p>Work</p></div>
+				<div class = "button_main_right_company" id="company2"><p>Arch Vis</p></div>
 			</div>
 		</div>
 		<div class = "body_block">
@@ -217,8 +265,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="work"><p>Work</p></div>
-				<div class = "right_node" id="company"><p>MMC</p></div>
+				<div class = "button_main_left_work" id="work3"><p>Work</p></div>
+				<div class = "button_main_right_company" id="company3"><p>MMC</p></div>
 			</div>
 		</div>
 		<div class = "body_block">
@@ -267,8 +315,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="study"><p>Study</p></div>
-				<div class = "right_node" id="school"><p>Mission College</p></div>
+				<div class = "button_main_left_study" id="study1"><p>Study</p></div>
+				<div class = "button_main_right_school" id="school1"><p>Mission College</p></div>
 			</div>
 		</div>
 		<div class = "body_block">
@@ -317,8 +365,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="study"><p>Study</p></div>
-				<div class = "right_node" id="school"><p>UC Berkeley</p></div>
+				<div class = "button_main_left_study" id="study2"><p>Study</p></div>
+				<div class = "button_main_right_school" id="school2"><p>UC Berkeley</p></div>
 			</div>
 		</div>
 		<div class = "body_block">
@@ -391,8 +439,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="study"><p>Study</p></div>
-				<div class = "right_node" id="school"><p>UC Berkeley</p></div>
+				<div class = "button_main_left_study" id="study3"><p>Study</p></div>
+				<div class = "button_main_right_school" id="school3"><p>UC Berkeley</p></div>
 			</div>
 		</div>
 		<div class = "body_block">
@@ -526,8 +574,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="study"><p>Study</p></div>
-				<div class = "right_node" id="school"><p>UC Berkeley</p></div>
+				<div class = "button_main_left_study" id="study4"><p>Study</p></div>
+				<div class = "button_main_right_school" id="school4"><p>UC Berkeley</p></div>
 			</div>
 		</div>
 		<div class = "body_block">
@@ -577,8 +625,8 @@ $(function(){
 		<div class = "big_block">
 			<div class = "horizon_connect" id="1"></div>
 			<div class = "big_node_background">
-				<div class = "left_node" id="study"><p>Study</p></div>
-				<div class = "right_node" id="self"><p>Web-BackEnd</p></div>
+				<div class = "button_main_left_study" id="study5"><p>Study</p></div>
+				<div class = "button_main_right_self" id="self1"><p>Web-BackEnd</p></div>
 			</div>
 		</div>
 		<div class = "body_block">
@@ -633,16 +681,148 @@ $(function(){
 	</div>
 </div>
 
-<div class = "footer"><p>COPYRIGHT © 2015 THO TRUONG </p></div>
+<div class = "footer"><p>Copyright © 2015 Tho Truong </p></div>
 </body>
 
 
 
+<script>
+
+$(function(){
+	$('[class^="button"]').each(function(){
+		var target = $(this);
+		var class_name = $(this).attr("class");
+		var id_num = $(this).attr("id");
+		var key_search = '[class$="'+id_num+'"]';
+
+		var box = $(key_search).dialog({
+			autoOpen:false,
+			width:'auto',
+			height:'auto',
+			minHeight: 20,
+			draggable: false,	
+			position:{
+			    my: "center top+30",
+			    of: target,
+			}
+
+		});
+		$(this).hover(function(){
+			box.dialog("open");
+		},function(){
+			box.dialog("close");
+		});
+
+
+	});
+});
 
 
 
+// var t;
+// $(function(){
 
 
+
+// 		$('[class^="button"]').hover(function(key_search){
+// 			var target = $(this);
+// 			var class_name = $(this).attr("class");
+// 			var id_num = $(this).attr("id");
+// 			key_search = '[class$="'+id_num+'"]';
+// 			// alert(key_search);
+// 	    	t = $(key_search).dialog({
+// 				width:'auto',
+// 				draggable: false,	
+// 				position:{
+// 				    my: "center top+30",
+// 				    of: target,
+// 				}
+
+// 			});
+// 			alert(t.attr("class"));
+	    	
+// 		},function(key_search){
+			
+// 			t.dialog("close");
+// 		});
+
+
+		
+		
+
+// });
+</script>
+<div class = "tree"></div>
+<div class = "information_fill">
+
+	<div class = "info_main_left_work1" >
+		<p>Position: Customer Service
+		<p>Tasks: Received calls from customers, presented sales services, managed payment plan data.
+	</div>
+	<div class = "info_main_left_work2" >
+		<p>Information 4
+		<p>Information 5
+		<p>Information 6
+	</div>
+	<div class = "info_main_left_work3" >
+		<p>Information 7
+		<p>Information 8
+		<p>Information 9
+	</div>
+	<div class = "info_main_left_study1" >
+		<p>Information 10
+		<p>Information 11
+		<p>Information 12
+	</div>
+	<div class = "info_main_left_study2" >
+		<p>Information 13
+		<p>Information 14
+		<p>Information 15
+	</div>
+	<div class = "info_main_left_study3" >
+		<p>Information 16
+		<p>Information 17
+		<p>Information 18
+	</div>
+	<div class = "info_main_left_study4" >
+		<p>Information 19
+		<p>Information 20
+		<p>Information 21
+	</div>
+	<div class = "info_main_left_study5" >
+		<p>Information 22
+		<p>Information 23
+		<p>Information 24
+	</div>
+	<div class = "info_main_right_company1" >
+		<p>Introduction: HTV is one of the biggest television station in Vietnam. It supplies services with free channels via broadcasting and paid via cable.
+	</div>
+	<div class = "info_main_right_company2" >
+		<p>Information 26
+	</div>
+	<div class = "info_main_right_company3" >
+		<p>Information 27
+	</div>
+	<div class = "info_main_right_school1" >
+		<p>Information 28
+	</div>
+	<div class = "info_main_right_school2" >
+		<p>Information 29
+	</div>
+	<div class = "info_main_right_school3" >
+		<p>Information 30
+	</div>
+	<div class = "info_main_right_school4" >
+		<p>Information 31
+	</div>
+	<div class = "info_main_right_school5" >
+		<p>Information 32
+	</div>
+	<div class = "info_main_right_self1" >
+		<p>Information 33
+	</div>
+
+</div>
 
 
 
