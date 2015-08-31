@@ -105,7 +105,7 @@ a:hover{
 }
 .objective {
 	background:rgba(0,0,0,0.5);
-	background-image: url("software_engineer.jpg") !important;
+	background-image: asset_url("software_engineer.jpg") !important;
 	background-size: 900px 170px !important;
 	font-weight: bold;
 	position: relative;
@@ -752,7 +752,7 @@ a:hover{
 	position:absolute;
 	left:385px;
 	top:131px;
-	background-image: url('green_tree.png');
+	background-image: asset_url('green_tree.png');
 	background-size:150px 150px;
 	width:150px;
 	height:150px;
