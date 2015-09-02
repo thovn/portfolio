@@ -12,7 +12,7 @@
 <body class = "body">
 <div class = "avatar_info_objective">
 <div class = "avatar_info">
-	<img class = 'avatar' src = "avata.jpg" />
+	<img class = 'avatar' src = "avatar.jpg" />
 	
 	<div class = "info">
 		<p class = "name"> THO TRUONG </p>
@@ -201,8 +201,8 @@
 		<div class = "big_block">
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj1"><p>Interior</p></div>
-				<div class = "button_child_mid" id = "mid1"><p>Samples</p></div>
-				<div class = "button_child_right" id = "right1"><p>Right</p></div>
+				<div class = "button_child_mid" id = "mid1"><p>Examples</p></div>
+				<div class = "button_child_right" id = "right1"><p>Links</p></div>
 			</div>
 		</div>
 <!-- ------------ -->
@@ -234,8 +234,8 @@
 		<div class = "big_block">
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj2"><p>Exterior</p></div>
-				<div class = "button_child_mid" id = "mid2"><p>Samples</p></div>
-				<div class = "button_child_right" id = "right2"><p>Right</p></div>
+				<div class = "button_child_mid" id = "mid2"><p>Examples</p></div>
+				<div class = "button_child_right" id = "right2"><p>Links</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -252,9 +252,9 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
-				<div class = "button_child_left_proj" id="proj1"><p>Project</p></div>
-				<div class = "button_child_mid" id = "mid1"><p>Mid</p></div>
-				<div class = "button_child_right" id = "right1"><p>Right</p></div>
+				<div class = "button_child_left_proj" id="proj3"><p>Object</p></div>
+				<div class = "button_child_mid" id = "mid3"><p>Examples</p></div>
+				<div class = "button_child_right" id = "right3"><p>Links</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -272,9 +272,9 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
-				<div class = "button_child_left_proj" id="proj1"><p>Project</p></div>
-				<div class = "button_child_mid" id = "mid1"><p>Mid</p></div>
-				<div class = "button_child_right" id = "right1"><p>Right</p></div>
+				<div class = "button_child_left_proj" id="proj4"><p>Teaching</p></div>
+				<div class = "button_child_mid" id = "mid4"><p>Examples</p></div>
+				<div class = "button_child_right" id = "right4"><p>Links</p></div>
 			</div>
 		</div>
 
@@ -305,9 +305,9 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
-				<div class = "button_child_left_proj" id="proj1"><p>Project</p></div>
-				<div class = "button_child_mid" id = "mid1"><p>Mid</p></div>
-				<div class = "button_child_right" id = "right1"><p>Right</p></div>
+				<div class = "button_child_left_proj" id="proj5"><p>Ex-Interior</p></div>
+				<div class = "button_child_mid" id = "mid5"><p>Examples</p></div>
+				<div class = "button_child_right" id = "right5"><p>Links</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -324,9 +324,9 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
-				<div class = "button_child_left_proj" id="proj1"><p>Project</p></div>
-				<div class = "button_child_mid" id = "mid1"><p>Mid</p></div>
-				<div class = "button_child_right" id = "right1"><p>Right</p></div>
+				<div class = "button_child_left_proj" id="proj6"><p>Object</p></div>
+				<div class = "button_child_mid" id = "mid6"><p>Examples</p></div>
+				<div class = "button_child_right" id = "right6"><p>Links</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -356,9 +356,9 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
-				<div class = "button_child_left_proj" id="proj1" id="volunteer"><p>Volunteer</p></div>
-				<div class = "button_child_mid" id = "mid1"><p>Mid</p></div>
-				<div class = "button_child_right" id = "right1"><p>Right</p></div>
+				<div class = "button_child_left_proj" id="proj7"><p>Volunteer</p></div>
+				<div class = "button_child_mid" id = "mid7"><p>Examples</p></div>
+				<a href = "https://www.sundayfriends.org/index.html" target = "_blank"><div class = "button_child_right" id = "right7"><p>Link</p></div></a>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -720,7 +720,7 @@
 <script>
 
 $(function(){
-	$('[class^="button"]').each(function(){
+	$('[class^="button_main_"]').each(function(){
 		var target = $(this);
 		var class_name = $(this).attr("class");
 		var id_num = $(this).attr("id");
@@ -736,6 +736,55 @@ $(function(){
 			    my: "center top+30",
 			    of: target,
 			}
+		});
+		$(this).hover(function(){
+			box.dialog("open");
+		},function(){
+			box.dialog("close");
+		});
+
+
+	});
+
+	$('[class^="button_child_left"]').each(function(){
+		var target = $(this);
+		var class_name = $(this).attr("class");
+		var id_num = $(this).attr("id");
+		var key_search = '[class$="'+id_num+'"]';
+
+		var box = $(key_search).dialog({
+			autoOpen:false,
+			width:'auto',
+			height:'auto',
+			minHeight: 20,
+			draggable: false,	
+			position:{
+			    my: "center top+30",
+			    of: target,
+			}
+		});
+		$(this).hover(function(){
+			box.dialog("open");
+		},function(){
+			box.dialog("close");
+		});
+
+
+	});
+
+	$('[class^="button_child_mid"]').each(function(){
+		var target = $(this);
+		var class_name = $(this).attr("class");
+		var id_num = $(this).attr("id");
+		var key_search = '[class$="'+id_num+'"]';
+
+		var box = $(key_search).dialog({
+			autoOpen:false,
+			width:850,
+			height:600,
+			minHeight: 20,
+			draggable: false,	
+			position: {my:"left top", at:"left+20 top+20", of : window},	
 		});
 		$(this).hover(function(){
 			box.dialog("open");
@@ -922,7 +971,42 @@ $(function(){
 		<p>Modeled, rendered interiors of buildings from blueprints.
 	</div>
 	<div class = "info_child_mid1" >
-		<img src="avatar.jpg">Hi</img>
+		<img class = "examples" src="interior_1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="interior_2.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="interior_3.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="interior_4.jpg" width = "380" height = "300"></img>
+		
+		
+	</div>
+	<div class = "info_child_mid2" >
+		<img class = "examples" src="exterior_1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="exterior_2.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="exterior_3.jpg" width = "380" height = "300"></img>
+		
+		
+	</div>
+	<div class = "info_child_mid3" >
+		<img class = "examples" src="obj1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="obj2.jpg" width = "380" height = "300"></img>
+	</div>
+	<div class = "info_child_mid4" >
+		<img class = "examples" src="teach1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="teach2.jpg" width = "380" height = "300"></img>
+		
+		
+	</div>
+	<div class = "info_child_mid5" >
+		<img class = "examples" src="inex1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="inex2.jpg" width = "380" height = "300"></img>
+		
+		
+	</div>
+	<div class = "info_child_mid6" >
+		<img class = "examples" src="o1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="o2.jpg" width = "380" height = "300"></img>	
+	</div>
+	<div class = "info_child_mid7" >
+		<img class = "examples" src="volunteer1.jpg" width = "800" height = "520"></img>
 		
 	</div>
 
