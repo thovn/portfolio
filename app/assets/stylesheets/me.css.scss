@@ -706,7 +706,7 @@ a:hover{
 */
 
 .ui-dialog {
-
+	position:absolute !important;
 	background: #e3e4c2 !important;
 	padding:0 !important;
 	margin:0 !important;
@@ -716,8 +716,8 @@ a:hover{
 	border-color:white !important;
 	border-width:0px !important;
 	border-radius: 10px !important;
-	min-width:100px;
-	max-width:1000px;
+	/*min-width:100px !important;*/
+	/*max-width:1000px;*/
 	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5) ;
 	display: inline-block;
 	
@@ -749,9 +749,9 @@ a:hover{
 
 [class^="info_"] {
 	/*max-width:700px !important;*/
-	min-width:100px !important;
+	/*min-width:100px !important;
 	min-height: 20px  !important;
-	
+	*/
 }
 [class^="info_"] th, td {
 	font-size: 14px !important;
@@ -803,12 +803,12 @@ table td {
 	font-style: italic;
 }
 
-[class^="info_child_mid"] {
+/*[class^="info_child_mid"] {
 	
 	position:relative;
 	width: 700px;
 	height:900px;
-}
+}*/
 
 .examples {
 	/*position:absolute;*/

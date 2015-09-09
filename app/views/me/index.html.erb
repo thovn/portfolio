@@ -203,7 +203,7 @@
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj1"><p>Interior</p></div>
 				<div class = "button_child_mid" id = "mid1"><p>Examples</p></div>
-				<div class = "button_child_right" id = "right1"><p>Link</p></div>
+				<div class = "button_child_right" id = "right1"><p>...</p></div>
 			</div>
 		</div>
 <!-- ------------ -->
@@ -236,7 +236,7 @@
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj2"><p>Exterior</p></div>
 				<div class = "button_child_mid" id = "mid2"><p>Examples</p></div>
-				<div class = "button_child_right" id = "right2"><p>Link</p></div>
+				<div class = "button_child_right" id = "right2"><p>...</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -255,7 +255,7 @@
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj3"><p>Object</p></div>
 				<div class = "button_child_mid" id = "mid3"><p>Examples</p></div>
-				<div class = "button_child_right" id = "right3"><p>Link</p></div>
+				<div class = "button_child_right" id = "right3"><p>...</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -275,7 +275,7 @@
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj4"><p>Teaching</p></div>
 				<div class = "button_child_mid" id = "mid4"><p>Examples</p></div>
-				<div class = "button_child_right" id = "right4"><p>Link</p></div>
+				<div class = "button_child_right" id = "right4"><p>...</p></div>
 			</div>
 		</div>
 
@@ -308,7 +308,7 @@
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj5"><p>Ex-Interior</p></div>
 				<div class = "button_child_mid" id = "mid5"><p>Examples</p></div>
-				<div class = "button_child_right" id = "right5"><p>Link</p></div>
+				<div class = "button_child_right" id = "right5"><p>...</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -327,7 +327,7 @@
 			<div class = "child_node">
 				<div class = "button_child_left_proj" id="proj6"><p>Object</p></div>
 				<div class = "button_child_mid" id = "mid6"><p>Examples</p></div>
-				<div class = "button_child_right" id = "right6"><p>Link</p></div>
+				<div class = "button_child_right" id = "right6"><p>...</p></div>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -376,9 +376,10 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
+
 				<div class = "button_child_left_proj" id="proj8"><p>Hog Game</p></div>
 				<div class = "button_child_mid" id = "mid8"><p>Demo</p></div>
-				<div class = "button_child_right" id = "right8"><p>Code</p></div>
+				<a href = "http://inst.eecs.berkeley.edu/~cs61a/fa13/proj/hog/hog.html" target = "_blank"><div class = "button_child_right" id = "right8"><p>Link</p></div></a>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -408,9 +409,10 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
+
 				<div class = "button_child_left_proj" id="proj9"><p>Scheme</p></div>
 				<div class = "button_child_mid" id = "mid9"><p>Demo</p></div>
-				<div class = "button_child_right" id = "right9"><p>Code</p></div>
+				<a href = "http://inst.eecs.berkeley.edu/~cs61a/fa13/proj/scheme/scheme.html" target = "_blank"><div class = "button_child_right" id = "right9"><p>Link</p></div></a>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -428,9 +430,10 @@
 		</div>
 		<div class = "big_block">
 			<div class = "child_node">
+
 				<div class = "button_child_left_proj" id="proj10"><p>Ants&Bees</p></div>
 				<div class = "button_child_mid" id = "mid10"><p>Demo</p></div>
-				<div class = "button_child_right" id = "right10"><p>Code</p></div>
+				<a href = "http://inst.eecs.berkeley.edu/~cs61a/fa13/proj/ants/ants.html" target = "_blank"><div class = "button_child_right" id = "right10"><p>Link</p></div></a>
 			</div>
 		</div>
 		<div class = "body_block"></div>
@@ -755,8 +758,7 @@ $(function(){
 
 		var box = $(key_search).dialog({
 			autoOpen:false,
-			width:'auto',
-			height:'auto',
+			
 			minHeight: 20,
 			draggable: false,	
 			position:{
@@ -781,11 +783,13 @@ $(function(){
 
 		var box = $(key_search).dialog({
 			autoOpen:false,
-			width:850,
-			height:600,
-			minHeight: 20,
+			resizable: false,
+			width:'auto',
+			maxWidth:600,
+			fluid:true,
+			height:'auto',
 			draggable: false,	
-			position: {my:"left top", at:"left+20 top+20", of : window},	
+			position: {my:"center", at:"left top", of : window, collision: "fit"},	
 		});
 		$(this).hover(function(){
 			box.dialog("open");
@@ -1000,20 +1004,36 @@ $(function(){
 		<p>Took children pictures when they were playing and posted to the website.
 	</div>
 
+	<div class = "info_child_left_proj8" >
+		<p>This is a simulator and multiple strategies for the dice game Hog.
+		
+	</div>
+
+	<div class = "info_child_left_proj9" >
+		<p>Developed an interpreter for a subset of the Scheme language.
+		<p>I joined the Recursive Art contest with Snow flake proj.
+		
+	</div>
+	<div class = "info_child_left_proj10" >
+		<p>Created a tower defense game called Ants vs SomeBees.
+		<p>This game is inspired by PopCap Games' Plants vs Zombies.
+		
+	</div>
+
 
 	<div class = "info_child_mid1" >
-		<img class = "examples" src="interior_1.jpg" width = "380" height = "300"></img>
-		<img class = "examples" src="interior_2.jpg" width = "380" height = "300"></img>
-		<img class = "examples" src="interior_3.jpg" width = "380" height = "300"></img>
-		<img class = "examples" src="interior_4.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="interior_1.jpg" width = "250" height = "200"></img>
+		<img class = "examples" src="interior_2.jpg" width = "250" height = "200"></img>
+		<img class = "examples" src="interior_3.jpg" width = "250" height = "200"></img>
+		<img class = "examples" src="interior_4.jpg" width = "250" height = "200"></img>
 		
 		
 	</div>
 	<div class = "info_child_mid2" >
 		<img class = "examples" src="exterior_1.jpg" width = "380" height = "300"></img>
 		<img class = "examples" src="exterior_2.jpg" width = "380" height = "300"></img>
-		<img class = "examples" src="exterior_3.jpg" width = "380" height = "300"></img>
-		
+		<!-- <img class = "examples" src="exterior_3.jpg" width = "380" height = "300"></img>
+		 -->
 		
 	</div>
 	<div class = "info_child_mid3" >
@@ -1038,6 +1058,21 @@ $(function(){
 	</div>
 	<div class = "info_child_mid7" >
 		<img class = "examples" src="volunteer1.jpg" width = "800" height = "520"></img>
+		
+	</div>
+	<div class = "info_child_mid8" >
+		<img class = "examples" src="hog_1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="hog_2.jpg" width = "380" height = "300"></img>
+		
+	</div>
+	<div class = "info_child_mid9" >
+		<img class = "examples" src="scheme_1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="scheme_2.jpg" width = "380" height = "300"></img>
+		
+	</div>
+	<div class = "info_child_mid10" >
+		<img class = "examples" src="ants_1.jpg" width = "380" height = "300"></img>
+		<img class = "examples" src="ants_2.jpg" width = "380" height = "300"></img>
 		
 	</div>
 
